@@ -6,7 +6,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: url(../public/4.jpg) no-repeat center;
+  background-size: cover;
+ 
 }
+
 
 .main {
   padding: 5rem 0;
@@ -119,3 +123,5 @@
     flex-direction: column;
   }
 }
+
+
