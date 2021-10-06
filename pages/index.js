@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.container}>
     
      </div>
-      <div>
+      <div style={{position:'relative'}}>
        <h1>Ultimo torneo </h1>
       <Swipper/>
       </div>

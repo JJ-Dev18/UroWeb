@@ -14,6 +14,7 @@
 	 z-index: 2;
 } */
  .wrapper {
+	 	 font-family: 'Saira Semi Condensed', sans-serif;
 	 position: relative;
 	 display: flex;
 	 align-items: center;
@@ -27,7 +28,7 @@
 	 position: relative;
 	 width: 300px;
 	 height: 485px;
-	 background-image: url(https://selimdoyranli.com/cdn/fut-player-card/img/card_bg.png);
+	 background-image: url(../public/card5.jpg);
 	 background-position: center center;
 	 background-size: 100% 100%;
 	 background-repeat: no-repeat;

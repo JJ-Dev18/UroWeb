@@ -29,7 +29,7 @@ export const Navbar = styled.nav `
  
 `
 export const Enlaces = styled.a`
-  font-family: "catorze27_style_1bold", sans-serif;
+  font-family: "Uro", sans-serif;
   font-weight: bold;
   line-height: 35px;
   padding: 10px 0;

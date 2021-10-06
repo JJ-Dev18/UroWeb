@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'Uro';
+  src: url(../public/fonts/The\ Rave\ Is\ In\ Your\ Pants.otf);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Uro , BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: mintcream;
   overflow-x: hidden;
@@ -57,12 +62,12 @@ a {
   height: 100%;
   object-fit: cover;
 }
-.swiper {
+/* .swiper {
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .swiper-slide {
   background-size: cover;
@@ -79,14 +84,15 @@ a {
   box-sizing: border-box;
   padding: 10px 0;
 }
-.mySwiper img{
-  object-fit: cover !important;
-}
+
 
 .mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
+}
+.mySwiper .swiper-slide img {
+ object-fit: none;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -97,6 +103,6 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: none;
   
 }
