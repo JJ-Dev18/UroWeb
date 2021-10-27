@@ -43,7 +43,7 @@ const Card = () => {
           <div className={styles.player_info}>
             {/* <!-- Player Name--> */}
             <div className={styles.player_name}>
-              <span>Murillo</span>
+              <span>Pop</span>
             </div>
             {/* <!-- Player Features--> */}
             <div className={styles.player_features}>

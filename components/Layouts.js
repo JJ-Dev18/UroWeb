@@ -1,11 +1,17 @@
 
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
+import styled from "styled-components";
 
-const Layout = ({children}) => {
+const container = styled.div `
+
+`
+
+const Layout = ({children,pageProps}) => {
+
   return (
     <>
-      <Header/>
+      <Header pageProps={pageProps}/>
       {children}
       <Footer/>
     </>

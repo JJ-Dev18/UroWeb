@@ -1,8 +1,9 @@
+import {FooterContent} from '../footer/FooterStyles'
 const Footer = () => {
   return ( 
-    <footer>
+    <FooterContent>
       <p>footer</p>
-    </footer>
+    </FooterContent>
    );
 }
  

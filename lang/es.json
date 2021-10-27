@@ -1,0 +1,22 @@
+{
+  "header": {
+    "enlaces": [
+      {
+        "nombre": "Inicio",
+        "link": "/"
+      },
+      {
+        "nombre": "Tienda",
+        "link": "/shop"
+      },
+      {
+        "nombre": "Dona",
+        "link": "/donate"
+      }
+    ]
+  },
+  "info": {
+    "titleDona": "Ayudanos a cumplir nuestro sueno",
+    "dona": "CON TU DONACIÓN, PODREMOS PERFECCIONAR LA CALIDAD DE LOS SERVICIOS QUE PRESTAMOS Y AMPLIAREMOS LA COBERTURA PARA LLEVAR NUESTRO PROFESIONALISMO Y CALIDAD A MUCHA MÁS POBLACIÓN DE LA TERCERA EDAD."
+  }
+}

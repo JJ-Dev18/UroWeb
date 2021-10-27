@@ -1,21 +1,31 @@
 import { Content,Enlaces, ListEnlaces, Logo, Navbar } from "./HeaderStyles";
 import {useState,useEffect} from 'react'
 import { theme } from "../../styles/GlobalStyles";
-const Header = () => {
+import ChangeLanguage from "../globalComponents/ChangeLanguage";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingBasket, faShoppingCart, faUserFriends } from "@fortawesome/free-solid-svg-icons";
+const Header = ({pageProps}) => {
   
-  // console.log(theme)
+
   const [scroll, setscroll] = useState(false)
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
     return () => window.removeEventListener("scroll", changeBackground);
   });
+  useEffect(() => {
+    pageProps.showHeader ? setscroll(true) : setscroll(false); 
+  }, [pageProps.showHeader])
+
   const changeBackground = ()=> {
-    if(window.scrollY >= 100){
-      setscroll(true)
+    if(!pageProps.showHeader){
+        if (window.scrollY >= 100) {
+          setscroll(true);
+        } else {
+          setscroll(false);
+        }
     }
-    else {
-      setscroll(false)
-    }
+   
   }
   // window.addEventListener('scroll', changeBackground)
   return (
@@ -25,14 +35,31 @@ const Header = () => {
       </Logo>
       <Navbar>
         <ListEnlaces scroll={scroll}>
+          {pageProps.enlaces && pageProps.enlaces.map((enlace) => {
+            return (
+              <li key={enlace.nombre}>
+                <Link href={`${enlace.link}`}>
+                  <Enlaces>{enlace.nombre} </Enlaces>
+                </Link>
+              </li>
+            );
+          })}
+          {pageProps.showHeader && (
+            <>
+              <li>
+                <Enlaces>
+                  <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+                </Enlaces>
+              </li>
+              <li>
+                <Enlaces>
+                  <FontAwesomeIcon icon={faUserFriends}></FontAwesomeIcon>
+                </Enlaces>
+              </li>
+            </>
+          )}
           <li>
-            <Enlaces>Inicio </Enlaces>
-          </li>
-          <li>
-            <Enlaces>Galeria </Enlaces>
-          </li>
-          <li>
-            <Enlaces> Tienda </Enlaces>
+            <ChangeLanguage />
           </li>
         </ListEnlaces>
       </Navbar>
@@ -41,3 +68,4 @@ const Header = () => {
 }
  
 export default Header;
+

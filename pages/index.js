@@ -6,7 +6,8 @@ import Swipper from '../components/globalComponents/Swipper';
 import { Tarjeta } from '../components/globalComponents/Tarjeta';
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home(props) {
+  
   return (
     <>
       <Head>
@@ -22,4 +23,15 @@ export default function Home() {
       <Card/>
     </>
   );
+}
+
+export async function getStaticProps({locale}) {
+  const response = await import(`../lang/${locale}.json`);
+  
+  return {
+    props: {
+      enlaces: response.default.header.enlaces,
+      showHeader: false,
+    }, // will be passed to the page component as props
+  };
 }

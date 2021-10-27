@@ -10,6 +10,18 @@
   background-size: cover;
  
 }
+.containerDonate{
+   min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  /* background: url(../public/donate.jpeg) no-repeat center; */
+  /* background-size: cover; */
+}
 
 
 .main {

@@ -35,9 +35,15 @@ export const Enlaces = styled.a`
   padding: 10px 0;
   color: #fff;
   margin-left: 3rem;
-  font-size: 20px;
-  transition: border .3s ease;
- 
+  font-size: 12px;
+  transition: border 0.3s ease;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1600px) {
+    font-size: 20px;
+  }
 `;
 export const ListEnlaces = styled.ul`
   display: flex;

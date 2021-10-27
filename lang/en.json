@@ -1,0 +1,22 @@
+{
+  "header": {
+    "enlaces": [
+      {
+        "nombre": "Home",
+        "link": "/"
+      },
+      {
+        "nombre": "Shop",
+        "link": "/shop"
+      },
+      {
+        "nombre": "Donate",
+        "link": "/donate"
+      }
+    ]
+  },
+  "info": {
+    "titleDona": "Help us fulfill our dream",
+    "dona": "WITH YOUR DONATION, WE WILL BE ABLE TO IMPROVE THE QUALITY OF THE SERVICES WE PROVIDE AND EXPAND THE COVERAGE TO TAKE OUR PROFESSIONALISM AND QUALITY TO MORE OF THE ELDERLY POPULATION."
+  }
+}
